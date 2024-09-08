@@ -1,0 +1,52 @@
+@import url(styles.css);
+
+#portada {
+    background-image: url("../Imagenes/D-coco-2.png");
+    background-color: #803D3B;
+    background-size: cover;
+    background-position: 50%;
+    justify-content: flex-end;
+}
+
+.portada {
+    height: calc(50vh - 91px);
+}
+
+#portada2 {
+    background-color: #322C2B;
+    background-size: cover;
+    background-position: center;
+}
+
+.portada2 {
+    height: calc(100vh - 91px);
+}
+
+.foto_portada {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+
+    & img {
+        width: auto;
+        height: 20%;
+    }
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+    & h1 {
+        color: var(--colorbage);
+    }
+}
+
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/*rooter la pagina*/
+
+:root {
+    --colorcafe: #322C2B;
+    --colormarron: #803D3B;
+    --colorbage: #E4C59E;
+
+    /* var font-family */
+    --fontOswald: "Oswald", sans-serif;
+}
+/* Rootear la página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fontOswald);
+    font-size: 16px;
+}
+
+
+/*rooter la pagina*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*BOTONES*/
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+
+/* Boton Negro */
+/* Boton 1 - Bage */
+
+.btn1 {
+    background-color: var(--colorbage);
+    color: var(--colorbage);
+    border: 2px solid var(--colorbage);
+}
+
+.btn1:hover {
+    background-color: var(--colorcafe);
+    color: var(--colorbage);
+    border: 2px solid var(--colorcafe);
+
+}
+
+/* Boton 2 - Bage */
+
+.btn2 {
+    background-color: var(--colorbage);
+    color: var(--colorbage);
+    border: 2px solid var(--colorbage);
+}
+
+.btn2:hover {
+    background-color: transparent;
+    color: var(--colormarron);
+    border: 2px solid var(--colorbage);
+}
+
+.container {
+
+    max-width: 1870px;
+    margin: 0px auto;
+    padding: 20px 0;
+}
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.grid_3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1023px) {
+
+    /* Contenedor */
+    .container {
+        padding: 80px 50px;
+    }
+
+
+
+    /* Modificar tamaño de h */
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+
+    /* Modificar 2 columnas a 1 columna */
+
+    .grid_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .grid_3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Contenedor */
+    .container {
+        padding: 80px 50px;
+    }
+
+
+
+    /* Modificar tamaño de h */
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+
+    /* Modificar 2 columnas a 1 columna */
+
+    .grid_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .grid_3 {
+        grid-template-columns: 1fr;
+    }
+
+}
